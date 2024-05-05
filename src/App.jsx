@@ -1,5 +1,11 @@
+import Header from './components/Header.jsx'
+
 function App() {
-  return <div className="text-center">hello world!</div>
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
 
 export default App

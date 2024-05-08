@@ -7,7 +7,7 @@ export default function About() {
       <h2 className="text-2xl font-bold font-[Inter] capitalize">
         A little bit about me
       </h2>
-      <UnderConstruction />
+      <UnderConstruction feature="about" />
     </section>
   )
 }

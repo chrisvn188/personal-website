@@ -7,7 +7,7 @@ export default function Contact() {
       <h2 className="text-2xl font-bold font-[Inter] capitalize">
         Let&apos;s talk
       </h2>
-      <UnderConstruction />
+      <UnderConstruction feature="contact" />
     </section>
   )
 }

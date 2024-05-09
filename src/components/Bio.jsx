@@ -9,16 +9,16 @@ export default function Bio() {
         <div className="w-24 h-24 rounded-full overflow-hidden">
           <img
             className="block w-full h-full object-cover object-top"
-            src="https://images.unsplash.com/photo-1590086782792-42dd2350140d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBvcnRyYWl0fGVufDB8MXwwfHx8MA%3D%3D"
+            src="/images/portrait.jpg"
             alt="Chris Bui"
           />
         </div>
         <hgroup className="flex flex-col gap-2">
-          <h1 className="font-[Inter] font-black text-3xl tracking-wider text-green-500 md:text-4xl">
+          <h1 className="font-[Inter] font-black text-3xl tracking-wider text-green-500 md:text-4xl lg:text-5xl">
             Chris Bui
           </h1>
           <p>
-            <NormalText>Software Engineer</NormalText>
+            <NormalText>Full-stack web developer</NormalText>
           </p>
         </hgroup>
       </div>

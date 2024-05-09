@@ -1,7 +1,4 @@
-import About from './components/About'
 import Bio from './components/Bio'
-import Contact from './components/Contact'
-import FavouriteResources from './components/FavouriteResources'
 import NavigationMenu from './components/NavigationMenu'
 import Projects from './components/Projects'
 import Stacks from './components/Stacks'
@@ -35,9 +32,6 @@ function App() {
           <Bio />
           <Projects />
           <Stacks />
-          <FavouriteResources />
-          <About />
-          <Contact />
         </main>
         <footer className="text-center">
           <small>

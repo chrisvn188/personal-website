@@ -3,7 +3,7 @@ import NormalText from './NormalText'
 /* eslint-disable react/prop-types */
 export default function NavigationMenu({ tabs, onTabClick }) {
   return (
-    <menu className="grid grid-cols-auto-fit-12 md:flex gap-4">
+    <menu className="grid grid-cols-auto-fill-10 gap-4">
       {tabs.map(({ name, icon }) => (
         <li key={name}>
           <button

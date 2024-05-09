@@ -19,4 +19,21 @@
     font-family: 'Inter';
     src: url(/fonts/Inter.ttf) format('truetype');
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Inter, sans-serif;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }

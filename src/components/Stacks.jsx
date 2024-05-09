@@ -19,17 +19,15 @@ export default function Stacks() {
   }
 
   return (
-    <section className="flex flex-col gap-8" id="stacks">
-      <h2 className="text-2xl font-bold font-[Inter] capitalize">
-        Technology Stacks
-      </h2>
+    <section className="pt-4 flex flex-col gap-8" id="stacks">
+      <h2>Technology Stacks</h2>
 
       <div className="flex rounded-md overflow-clip self-start border-[1px] border-solid border-zinc-800">
         {stackCategories.map((category, index) => (
           <button
             key={category}
-            className={`bg-zinc-900 capitalize px-3 py-2 hover:bg-orange-500 hover:text-orange-950 ${
-              activeIndex === index ? activeStyles : ''
+            className={`capitalize px-3 py-2 hover:bg-orange-500 hover:text-orange-950 ${
+              activeIndex === index ? activeStyles : 'bg-zinc-900 text-zinc-50'
             }`}
             onClick={() => handleClickTab(index)}>
             <NormalText>{category}</NormalText>
@@ -37,14 +35,15 @@ export default function Stacks() {
         ))}
       </div>
 
-      <ul className="flex flex-wrap gap-4">
+      <ul className="grid grid-cols-auto-fill-12 gap-4">
         {stacks
           .filter((stack) => stack.category === currentActiveCategory)
           .map((stack) => (
             <li key={stack.id}>
-              <span className="inline-block px-3 py-2 bg-green-500 text-green-950 rounded-full">
-                {stack.name}
-              </span>
+              <div className="text-center p-4 border-[1px] bg-zinc-900 border-zinc-800 rounded-md flex flex-col items-center gap-4">
+                <NormalText>{stack.name}</NormalText>
+                <img src={stack.logoSrc} alt="" width={44} />
+              </div>
             </li>
           ))}
       </ul>

@@ -4,16 +4,14 @@ import { projects } from '../data'
 /* eslint-disable react/prop-types */
 export default function Projects() {
   return (
-    <section className="flex flex-col gap-8" id="projects">
-      <h2 className="text-2xl font-bold font-[Inter] capitalize">
-        My projects
-      </h2>
+    <section className="pt-4 flex flex-col gap-8" id="projects">
+      <h2>My projects</h2>
       <ul className="grid grid-cols-1 md:grid-cols-auto-fit-20 gap-4">
         {projects.map((project) => (
           <li
             className="flex flex-col gap-4 p-4 bg-zinc-900 rounded-md border-[1px] border-zinc-800"
             key={project.id}>
-            <h3 className="text-green-500 font-[Inter] font-bold text-lg tracking-wide capitalize">
+            <h3 className="text-green-500 font-[Inter] font-bold tracking-wide capitalize">
               {project.name}
             </h3>
             <div>
@@ -31,7 +29,7 @@ export default function Projects() {
               <a
                 className="underline self-start hover:text-orange-500"
                 href="#">
-                <NormalText>Preview</NormalText>
+                Preview
               </a>
             </div>
           </li>

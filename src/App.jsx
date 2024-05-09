@@ -1,6 +1,7 @@
 import About from './components/About'
 import Bio from './components/Bio'
 import Contact from './components/Contact'
+import FavouriteResources from './components/FavouriteResources'
 import NavigationMenu from './components/NavigationMenu'
 import Projects from './components/Projects'
 import Stacks from './components/Stacks'
@@ -28,14 +29,13 @@ function App() {
 
   return (
     <PageWrapper>
-      <div className="max-w-[50rem] mx-auto flex flex-col gap-10 md:gap-12">
-        <header className="flex flex-col gap-8">
-          <Bio />
-          <NavigationMenu tabs={tabs} onTabClick={handleTabClick} />
-        </header>
+      <div className="max-w-[50rem] mx-auto flex flex-col gap-20 md:gap-30">
         <main className="flex flex-col gap-10 md:gap-12">
+          <NavigationMenu tabs={tabs} onTabClick={handleTabClick} />
+          <Bio />
           <Projects />
           <Stacks />
+          <FavouriteResources />
           <About />
           <Contact />
         </main>

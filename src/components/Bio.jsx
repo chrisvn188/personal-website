@@ -4,7 +4,7 @@ import NormalText from './NormalText'
 
 export default function Bio() {
   return (
-    <section className="flex flex-col gap-4 md:gap-6">
+    <section className="pt-4 flex flex-col gap-4 md:gap-6">
       <div className="flex gap-4 items-center flex-wrap">
         <div className="w-24 h-24 rounded-full overflow-hidden">
           <img
@@ -14,7 +14,7 @@ export default function Bio() {
           />
         </div>
         <hgroup className="flex flex-col gap-2">
-          <h1 className="font-[Inter] font-black text-3xl tracking-wider text-green-500 md:text-4xl lg:text-5xl">
+          <h1 className="font-black text-4xl tracking-wider text-green-500 lg:text-5xl">
             Chris Bui
           </h1>
           <p>

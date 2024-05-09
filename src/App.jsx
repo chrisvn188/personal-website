@@ -2,18 +2,11 @@ import Bio from './components/Bio'
 import NavigationMenu from './components/NavigationMenu'
 import Projects from './components/Projects'
 import Stacks from './components/Stacks'
-import {
-  CircleStackIcon,
-  FolderIcon,
-  InboxIcon,
-  UserCircleIcon,
-} from '@heroicons/react/24/solid'
+import { CircleStackIcon, FolderIcon } from '@heroicons/react/24/solid'
 
 const tabs = [
   { name: 'projects', icon: <FolderIcon width={20} /> },
   { name: 'stacks', icon: <CircleStackIcon width={20} /> },
-  { name: 'about', icon: <UserCircleIcon width={20} /> },
-  { name: 'contact', icon: <InboxIcon width={20} /> },
 ]
 
 /* eslint-disable react/prop-types */
@@ -45,7 +38,7 @@ function App() {
 
 function PageWrapper({ children }) {
   return (
-    <main className="min-h-dvh px-6 py-10 md:py-20 bg-zinc-950 text-zinc-100 font-[DMMono]">
+    <main className="min-h-dvh px-4 py-10 md:py-20 bg-zinc-950 text-zinc-100 font-[DMMono]">
       {children}
     </main>
   )

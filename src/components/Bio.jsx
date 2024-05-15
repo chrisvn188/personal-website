@@ -22,7 +22,7 @@ export default function Bio() {
           </p>
         </hgroup>
       </div>
-      <p className="max-w-[80ch]">
+      <p className="max-w-[80ch] text-slate-300">
         <NormalText>
           I <StyledStrongText>design</StyledStrongText> and{' '}
           <StyledStrongText>build</StyledStrongText> responsive websites and web
@@ -40,7 +40,7 @@ export default function Bio() {
 
 export function Location() {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 text-slate-300">
       <span>
         <MapPinIcon className="text-orange-500" width={20} />
       </span>

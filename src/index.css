@@ -4,18 +4,6 @@
 
 @layer base {
   @font-face {
-    font-family: 'Eczar';
-    src: url(/fonts/Eczar.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'DMMono';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/fonts/DMMono.ttf) format('truetype');
-  }
-
-  @font-face {
     font-family: 'Inter';
     src: url(/fonts/Inter.ttf) format('truetype');
   }
@@ -35,5 +23,9 @@
   h3 {
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  body {
+    font-family: Inter, sans-serif;
   }
 }

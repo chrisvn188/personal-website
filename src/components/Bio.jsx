@@ -22,7 +22,7 @@ export default function Bio() {
           </p>
         </hgroup>
       </div>
-      <p>
+      <p className="max-w-[80ch]">
         <NormalText>
           I <StyledStrongText>design</StyledStrongText> and{' '}
           <StyledStrongText>build</StyledStrongText> responsive websites and web

@@ -1,12 +1,6 @@
 import Bio from './components/Bio'
 import Projects from './components/Projects'
 import Stacks from './components/Stacks'
-import { CircleStackIcon, FolderIcon } from '@heroicons/react/24/solid'
-
-const tabs = [
-  { name: 'projects', icon: <FolderIcon width={20} /> },
-  { name: 'stacks', icon: <CircleStackIcon width={20} /> },
-]
 
 /* eslint-disable react/prop-types */
 function App() {

@@ -8,10 +8,12 @@ const Projects = () => {
       </p>
       <div className="grid lg:grid-cols-2 gap-12">
         {projects.map((project) => (
-          <article className="grid rounded-sm overflow-hidden" key={project.id}>
+          <article
+            className="group grid rounded-sm overflow-hidden"
+            key={project.id}>
             <div className="lg:max-h-[15rem]">
               <img
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-all"
                 src={project.imageUrl}
                 alt={project.name}
               />

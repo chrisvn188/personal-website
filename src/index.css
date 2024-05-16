@@ -27,5 +27,10 @@
 
   body {
     font-family: Inter, sans-serif;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255, 186, 197),
+      rgb(88, 88, 255)
+    );
   }
 }

@@ -1,32 +1,27 @@
+import About from './components/About'
 import Bio from './components/Bio'
+import Contact from './components/Contact'
 import Projects from './components/Projects'
-import Stacks from './components/Stacks'
 
 /* eslint-disable react/prop-types */
 function App() {
   return (
     <PageWrapper>
-      <div className="max-w-[50rem] mx-auto flex flex-col gap-20 md:gap-30">
-        <main className="flex flex-col gap-10 md:gap-12">
-          <Bio />
-          <Projects />
-          <Stacks />
-        </main>
-        <footer className="text-center">
-          <small>
-            Created with 💖 by Chris Bui - {new Date().getFullYear()}
-          </small>
-        </footer>
-      </div>
+      <main className="grid gap-24">
+        <Bio />
+        <Projects />
+        <About />
+        <Contact />
+      </main>
     </PageWrapper>
   )
 }
 
 function PageWrapper({ children }) {
   return (
-    <main className="min-h-dvh px-4 py-10 md:py-20 bg-zinc-950 text-zinc-100 font-[]">
+    <div className="min-h-dvh p-4 md:p-12 lg:py-24 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
       {children}
-    </main>
+    </div>
   )
 }
 

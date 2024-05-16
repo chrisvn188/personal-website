@@ -1,40 +1,40 @@
-import NormalText from './NormalText'
 import { projects } from '../data'
 
-/* eslint-disable react/prop-types */
-export default function Projects() {
+const Projects = () => {
   return (
-    <section className="pt-4 flex flex-col gap-8" id="projects">
-      <h2>My projects</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-auto-fit-20 gap-4">
+    <section className="relative border border-dashed rounded-sm border-zinc-700 p-4 md:p-12 ">
+      <p className="bg-green-500 text-green-950 p-2 md:px-4 inline-block right-[2rem] bottom-full rounded-t-md absolute font-medium tracking-widest">
+        My latest projects
+      </p>
+      <div className="grid lg:grid-cols-2 gap-12">
         {projects.map((project) => (
-          <li
-            className="flex flex-col gap-4 p-4 bg-zinc-900 rounded-md border-[1px] border-zinc-800"
-            key={project.id}>
-            <h3 className="text-green-500 font-[Inter] font-bold tracking-wide capitalize">
-              {project.name}
-            </h3>
-            <div>
-              <img src={project.imageUrl} alt={project.name} />
+          <article className="grid rounded-sm overflow-hidden" key={project.id}>
+            <div className="lg:max-h-[15rem]">
+              <img
+                className="w-full h-full object-cover object-top"
+                src={project.imageUrl}
+                alt={project.name}
+              />
             </div>
-            <p className="line-clamp-4">
-              <NormalText>{project.description}</NormalText>
-            </p>
-            <div className="flex gap-4">
-              <a
-                className="underline self-start hover:text-orange-500"
-                href="#">
-                <NormalText>Github</NormalText>
-              </a>
-              <a
-                className="underline self-start hover:text-orange-500"
-                href="#">
-                Preview
-              </a>
+            <div className="grid gap-2 bg-zinc-800 border-zinc-700 border p-4">
+              <h3 className="">{project.name}</h3>
+              <p className="line-clamp-3 text-zinc-400 md:text-lg">
+                {project.description}
+              </p>
+              <div className="flex gap-4 pt-4 pb-2">
+                <button className="px-3 py-1 rounded-sm capitalize bg-zinc-50 text-zinc-950">
+                  github 🔗
+                </button>
+                <button className="px-3 py-1 rounded-sm capitalize bg-zinc-50 text-zinc-950">
+                  live 🔗
+                </button>
+              </div>
             </div>
-          </li>
+          </article>
         ))}
-      </ul>
+      </div>
     </section>
   )
 }
+
+export default Projects

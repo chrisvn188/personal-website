@@ -1,49 +1,21 @@
 /* eslint-disable react/prop-types */
-import { createContext, useState } from 'react'
 import Bio from './components/Bio'
 import Projects from './components/Projects'
-import BorderTabs from './components/BorderTabs'
-
-export const BorderContext = createContext(null)
 
 function App() {
-  const [currentBorderStyle, setCurrentBorderStyle] = useState('dashed')
-
-  let customizedBorderClass = ''
-
-  switch (currentBorderStyle) {
-    case 'dashed':
-      customizedBorderClass = 'border-dashed'
-      break
-    case 'dotted':
-      customizedBorderClass = 'border-dotted'
-      break
-    case 'solid':
-      customizedBorderClass = 'border-solid'
-      break
-  }
-
-  const handleChangeBorderStyle = (event) => {
-    setCurrentBorderStyle(event.target.textContent)
-  }
-
   return (
-    <BorderContext.Provider
-      value={{ type: currentBorderStyle, styles: customizedBorderClass }}>
-      <PageWrapper>
-        <main className="grid gap-24">
-          <BorderTabs onTabClick={handleChangeBorderStyle} />
-          <Bio />
-          <Projects />
-        </main>
-      </PageWrapper>
-    </BorderContext.Provider>
+    <PageWrapper>
+      <main className="grid gap-24">
+        <Bio />
+        <Projects />
+      </main>
+    </PageWrapper>
   )
 }
 
 function PageWrapper({ children }) {
   return (
-    <div className="min-h-dvh px-4 py-8 md:p-8 lg:p-12 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
+    <div className="min-h-dvh px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
       {children}
     </div>
   )

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Bio from './components/Bio'
 import Projects from './components/Projects'
+import Tools from './components/Tools'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <main className="grid gap-24">
         <Bio />
         <Projects />
+        <Tools />
       </main>
     </PageWrapper>
   )

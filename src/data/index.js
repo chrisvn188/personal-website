@@ -4,7 +4,7 @@ export const projects = [
     name: 'Youtube clone',
     description:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
-    imageUrl: '/images/youtube-clone.png',
+    imageUrl: '/images/projects/youtube-clone.png',
     githubUrl: 'fake github url',
     liveUrl: 'fake live url',
   },
@@ -13,7 +13,7 @@ export const projects = [
     name: 'Instagram Clone',
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    imageUrl: '/images/instagram-clone.png',
+    imageUrl: '/images/projects/instagram-clone.png',
     githubUrl: 'fake github url',
     liveUrl: 'fake live url',
   },
@@ -22,7 +22,7 @@ export const projects = [
     name: 'X Clone',
     description:
       "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    imageUrl: '/images/twitter-clone.png',
+    imageUrl: '/images/projects/twitter-clone.png',
     githubUrl: 'fake github url',
     liveUrl: 'fake live url',
   },
@@ -31,8 +31,47 @@ export const projects = [
     name: 'Personal Portfolio',
     description:
       "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
-    imageUrl: '/images/personal-website.png',
+    imageUrl: '/images/projects/personal-website.png',
     githubUrl: 'fake github url',
     liveUrl: 'fake live url',
+  },
+]
+
+export const toolList = [
+  {
+    id: crypto.randomUUID(),
+    name: 'html',
+    logoUrl: '/images/tools/html.png',
+    category: 'development',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'css',
+    logoUrl: '/images/tools/css.png',
+    category: 'development',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'javascript',
+    logoUrl: '/images/tools/js.png',
+    category: 'development',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'react',
+    logoUrl: '/images/tools/react.png',
+    category: 'development',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'github',
+    logoUrl: '/images/tools/github.png',
+    category: 'development',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'figma',
+    logoUrl: '/images/tools/figma.png',
+    category: 'design',
   },
 ]

@@ -9,7 +9,7 @@ export default function Bio() {
         <div className="aspect-video md:aspect-auto md:col-span-1 lg:col-span-1 rounded-md overflow-hidden">
           <img
             className="h-full w-full object-cover object-top"
-            src="/images/me.jpg"
+            src="/images/bio/me.jpg"
             alt="Chris Bui"
           />
         </div>

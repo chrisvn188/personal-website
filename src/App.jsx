@@ -43,7 +43,7 @@ function App() {
 
 function PageWrapper({ children }) {
   return (
-    <div className="min-h-dvh p-4 md:p-12 lg:py-24 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
+    <div className="min-h-dvh px-4 py-8 md:p-8 lg:p-12 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
       {children}
     </div>
   )

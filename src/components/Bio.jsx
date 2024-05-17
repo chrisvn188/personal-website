@@ -1,13 +1,18 @@
 /* eslint-disable react/prop-types */
 import { MapPinIcon } from '@heroicons/react/24/solid'
+import { useContext } from 'react'
+import { BorderContext } from '../App'
 
 export default function Bio() {
+  const borderContext = useContext(BorderContext)
+
   return (
-    <section className="relative border border-dashed rounded-sm border-zinc-700 mt-16 p-4 md:p-12">
-      <p className="bg-green-500 text-green-950 p-2 md:px-4 inline-block left-[2rem] bottom-full rounded-t-md absolute font-medium tracking-widest">
-        Hello World 👋🏻
+    <section
+      className={`relative border-2 ${borderContext.styles} rounded-sm border-blue-700 p-4 md:p-12`}>
+      <p className="bg-blue-700 text-blue-50 p-2 md:px-4 inline-block left-[2rem] bottom-full rounded-t-md absolute font-medium tracking-widest">
+        Hello World!
       </p>
-      <div className="flex flex-col gap-4 md:gap-6 p-4 md:p-8 bg-zinc-800 rounded-sm border border-zinc-700 mx-auto">
+      <div className="flex flex-col gap-4 md:gap-6 p-4 md:p-8 bg-zinc-900 rounded-sm border border-zinc-800 mx-auto">
         <div className="flex gap-4 items-center flex-wrap">
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden">
             <img
@@ -53,8 +58,8 @@ export function AvailableForWork() {
   return (
     <div className="flex items-center gap-2 text-zinc-400 text-base md:text-lg">
       <span className="relative flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
       </span>
       <span>Available for work</span>
     </div>

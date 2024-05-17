@@ -1,10 +1,15 @@
+import { useContext } from 'react'
 import { projects } from '../data'
+import { BorderContext } from '../App'
 
 const Projects = () => {
+  const borderContext = useContext(BorderContext)
+
   return (
-    <section className="relative border border-dashed rounded-sm border-zinc-700 p-4 md:p-12 ">
-      <p className="bg-green-500 text-green-950 p-2 md:px-4 inline-block right-[2rem] bottom-full rounded-t-md absolute font-medium tracking-widest">
-        My latest projects
+    <section
+      className={`relative border-2 ${borderContext.styles} rounded-sm border-purple-700 p-4 md:p-12`}>
+      <p className="bg-purple-700 text-purple-50 p-2 md:px-4 inline-block right-[2rem] bottom-full rounded-t-md absolute font-medium tracking-widest">
+        Latest projects
       </p>
       <div className="grid lg:grid-cols-2 gap-12">
         {projects.map((project) => (
@@ -18,7 +23,7 @@ const Projects = () => {
                 alt={project.name}
               />
             </div>
-            <div className="grid gap-2 bg-zinc-800 border-zinc-700 border p-4">
+            <div className="grid gap-2 bg-zinc-900 border-zinc-800 border p-4">
               <h3 className="">{project.name}</h3>
               <p className="line-clamp-3 text-zinc-400 md:text-lg">
                 {project.description}

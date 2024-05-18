@@ -13,14 +13,14 @@ const Tools = () => {
   return (
     <Section leftText text="My tools">
       <div className="flex flex-col gap-8 items-center">
-        <menu className="w-full md:w-auto flex flex-wrap gap-2 bg-blue-700 p-2 border border-blue-600 rounded-md">
+        <menu className="w-full md:w-auto flex flex-wrap gap-2 bg-zinc-900 p-2 border border-zinc-800 rounded-md">
           {categories.map((tab) => (
             <li
               className="grow shrink-0 md:grow-0 rounded-md overflow-hidden"
               key={tab}>
               <button
                 className={` w-full p-3 ${
-                  active === tab ? 'bg-blue-950' : ''
+                  active === tab ? 'bg-blue-700' : ''
                 } text-blue-50`}
                 onClick={() => handleTabClick(tab)}
                 data-tab={tab}>
@@ -49,7 +49,7 @@ const Tools = () => {
               </li>
             ))}
         </ul>
-        <p className="p-4 md:p-8 rounded-md bg-zinc-900 border border-zinc-800">
+        <p className="p-4 md:p-8 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-400 md:text-lg">
           I am passionate about continually expanding my web development skills.
           Every day, I learn and master new technologies, currently focusing on
           Next.js, a powerful React framework for server-side rendering and

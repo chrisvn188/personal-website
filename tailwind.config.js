@@ -10,6 +10,9 @@ export default {
         'auto-fit-15': 'repeat(auto-fit, minmax(15rem, 1fr))',
         'auto-fit-20': 'repeat(auto-fit, minmax(20rem, 1fr))',
       },
+      colors: {
+        brand: '#6366F1',
+      },
     },
   },
   plugins: [],

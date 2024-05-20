@@ -21,8 +21,8 @@ const Tools = () => {
               key={tab}>
               <button
                 className={`w-full p-3 ${
-                  active === tab ? 'bg-blue-700' : ''
-                } text-blue-50 hover:bg-zinc-950`}
+                  active === tab ? 'bg-brand' : ''
+                } text-blue-50 hover:bg-brand active:bg-brand/30`}
                 onClick={() => handleTabClick(tab)}
                 data-tab={tab}>
                 For {tab}

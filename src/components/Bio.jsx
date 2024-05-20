@@ -45,7 +45,7 @@ export default function Bio() {
           </div>
 
           <div className="flex flex-wrap gap-4 items-center">
-            <button className="px-3 py-3 bg-blue-600 text-blue-50 rounded-md">
+            <button className="px-3 py-3 bg-brand text-white rounded-md">
               View my work
             </button>
             <button className="px-3 py-3 bg-zinc-700 text-zinc-50 rounded-md">
@@ -96,8 +96,8 @@ export function AvailableForWork() {
   return (
     <div className="flex items-center gap-2 text-zinc-400 text-base md:text-lg">
       <span className="relative flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
       </span>
       <span>Available for work</span>
     </div>

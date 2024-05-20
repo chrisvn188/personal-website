@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Section from './Section'
 import { toolList } from '../data'
+import FancyStrong from './FancyStrong'
 
 const Tools = () => {
   const categories = Array.from(new Set(toolList.map((tool) => tool.category)))
@@ -11,7 +12,7 @@ const Tools = () => {
   }
 
   return (
-    <Section leftText text="Languages & tools">
+    <Section leftText text="My tools">
       <div className="flex flex-col gap-8 items-center">
         <menu className="w-full md:w-auto flex flex-wrap gap-2 bg-zinc-900 p-2 border border-zinc-800 rounded-md">
           {categories.map((tab) => (
@@ -52,10 +53,10 @@ const Tools = () => {
         </ul>
 
         <p className="p-4 md:p-8 rounded-md bg-zinc-900 border border-zinc-800">
-          I am passionate about continually expanding my web development skills.
-          Every day, I learn and master new technologies, currently focusing on
-          Next.js, a powerful React framework for server-side rendering and
-          static site generation.
+          I am <FancyStrong>passionate</FancyStrong> about continually expanding
+          my web development skills. Every day, I learn and master new
+          technologies, currently focusing on Next.js, a powerful React
+          framework for server-side rendering and static site generation.
         </p>
       </div>
     </Section>

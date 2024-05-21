@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import Bio from './components/Bio'
+import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Tools from './components/Tools'
 
@@ -10,6 +11,7 @@ function App() {
         <Bio />
         <Tools />
         <Projects />
+        <Contact />
       </main>
     </PageWrapper>
   )

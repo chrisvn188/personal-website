@@ -11,7 +11,7 @@ export default {
         'auto-fit-20': 'repeat(auto-fit, minmax(20rem, 1fr))',
       },
       colors: {
-        brand: 'blue',
+        brand: '#473BF0',
       },
     },
   },

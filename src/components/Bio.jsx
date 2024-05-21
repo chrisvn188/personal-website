@@ -5,8 +5,8 @@ import { Button } from '@headlessui/react'
 export default function Bio() {
   return (
     <div>
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-        <div className="hidden md:block md:aspect-auto md:col-span-1 lg:col-span-1 rounded-md overflow-hidden">
+      <div className="grid grid-cols-1 max-w-[32rem] gap-4 mx-auto lg:grid-cols-3 lg:max-w-none lg:gap-8">
+        <div className="aspect-video col-span-1 md:block lg:aspect-auto lg:col-span-1 rounded-md overflow-hidden">
           <img
             className="h-full w-full object-cover object-top"
             src="/images/bio/me.jpg"
@@ -14,20 +14,10 @@ export default function Bio() {
           />
         </div>
 
-        <div className="md:col-span-1 lg:col-span-2 flex flex-col gap-4 md:gap-6 p-4 md:p-8 bg-zinc-900 rounded-md border border-zinc-800 mx-auto">
-          <div className="flex gap-4 items-center flex-wrap">
-            <div className="aspect-square w-16 h-16 rounded-full overflow-hidden md:hidden">
-              <img
-                className="h-full w-full object-cover object-top"
-                src="/images/bio/me.jpg"
-                alt="Chris Bui"
-              />
-            </div>
-
-            <h1 className="text-3xl md:text-4xl tracking-tight text-zinc-50 font-bold text-balance">
-              Frontend Engineer
-            </h1>
-          </div>
+        <div className="lg:col-span-2 flex flex-col gap-4 md:gap-6 p-4 md:p-8 bg-zinc-900 rounded-md border border-zinc-800 mx-auto">
+          <h1 className="text-3xl md:text-4xl tracking-tight text-zinc-50 font-bold text-balance">
+            Frontend Engineer
+          </h1>
 
           <p>
             Hello 👋🏻, I&apos;m Chris Bui. I love the process of turning abstract

@@ -2,14 +2,12 @@
 import Bio from './components/Bio'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-import Tools from './components/Tools'
 
 function App() {
   return (
     <PageWrapper>
       <main className="grid gap-24">
         <Bio />
-        <Tools />
         <Projects />
         <Contact />
       </main>
@@ -19,7 +17,7 @@ function App() {
 
 function PageWrapper({ children }) {
   return (
-    <div className="min-h-dvh px-4 py-16 md:px-8 md:py-24 lg:py-32 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
+    <div className="min-h-dvh px-4 py-4 sm:p-8 md:p-16 bg-zinc-950 text-zinc-100 max-w-[66rem] mx-auto">
       {children}
     </div>
   )

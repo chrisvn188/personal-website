@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { MapPinIcon } from '@heroicons/react/24/solid'
-import FancyStrong from './FancyStrong'
+import { Button } from '@headlessui/react'
 
 export default function Bio() {
   return (
@@ -24,17 +24,13 @@ export default function Bio() {
               />
             </div>
 
-            <hgroup className="flex flex-col">
-              <h1 className="text-3xl md:text-4xl tracking-tight text-zinc-50 font-bold text-balance">
-                Hi 👋🏻, I&apos;m Chris Bui
-              </h1>
-
-              <p className="text-balance">Front-end developer in Vietnam.</p>
-            </hgroup>
+            <h1 className="text-3xl md:text-4xl tracking-tight text-zinc-50 font-bold text-balance">
+              Frontend Engineer
+            </h1>
           </div>
 
           <p>
-            I <FancyStrong>love</FancyStrong> the process of turning abstract
+            Hello 👋🏻, I&apos;m Chris Bui. I love the process of turning abstract
             ideas into practical, real-world applications through the power of
             programming.
           </p>
@@ -45,12 +41,12 @@ export default function Bio() {
           </div>
 
           <div className="flex flex-wrap gap-4 items-center">
-            <button className="px-3 py-3 bg-brand text-white rounded-md">
+            <Button className="rounded-md bg-brand py-3 px-4 font-medium text-sm sm:text-base text-zinc-50 data-[hover]:bg-brand/80 data-[active]:bg-brand transition-colors">
               View my work
-            </button>
-            <button className="px-3 py-3 bg-zinc-700 text-zinc-50 rounded-md">
+            </Button>
+            <Button className="rounded-md bg-gray-700 py-3 px-4 font-medium text-sm sm:text-base text-zinc-50">
               Let&apos;s talk
-            </button>
+            </Button>
             <div className="hidden sm:flex gap-4">
               <a className="group" href="" aria-label="github">
                 <svg

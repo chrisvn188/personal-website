@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Section from './Section'
 import { toolList } from '../data'
-import FancyStrong from './FancyStrong'
 
 const Tools = () => {
   const categories = Array.from(new Set(toolList.map((tool) => tool.category)))
@@ -22,7 +21,7 @@ const Tools = () => {
               <button
                 className={`w-full p-3 ${
                   active === tab ? 'bg-brand' : ''
-                } text-blue-50 hover:bg-brand active:bg-brand/30`}
+                } text-blue-50 hover:bg-brand/80 font-medium`}
                 onClick={() => handleTabClick(tab)}
                 data-tab={tab}>
                 For {tab}
@@ -53,10 +52,10 @@ const Tools = () => {
         </ul>
 
         <p className="p-4 md:p-8 rounded-md bg-zinc-900 border border-zinc-800">
-          I am <FancyStrong>passionate</FancyStrong> about continually expanding
-          my web development skills. Every day, I learn and master new
-          technologies, currently focusing on Next.js, a powerful React
-          framework for server-side rendering and static site generation.
+          I am passionate about continually expanding my web development skills.
+          Every day, I learn and master new technologies, currently focusing on
+          Next.js, a powerful React framework for server-side rendering and
+          static site generation.
         </p>
       </div>
     </Section>
